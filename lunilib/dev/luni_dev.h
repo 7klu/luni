@@ -2,8 +2,8 @@
 path: luni/lunilib
 */
 
-#ifndef LUNI_H
-#define LUNI_H
+#ifndef LUNI_DEV_H
+#define LUNI_DEV_H
 
 #if defined(_WIN32) || defined(_WIN64) // windows
     #ifdef _WIN64
@@ -65,52 +65,64 @@ typedef char* string_t;
     typedef _Float16 __f16_t;
 #endif
 
-// int
+/* int */
 typedef signed char __i8_t;
 typedef signed short __i16_t;
 typedef signed int __i32_t;
 typedef signed long long __i64_t;
 
-// unsigned int
+/* unsig int */
 typedef unsigned char __u8_t;
 typedef unsigned short __u16_t;
 typedef unsigned int __u32_t;
 typedef unsigned long long __u64_t;
 
-// float
+/* float */
 typedef float __f32_t;
 typedef double __f64_t;
 typedef long double __f128_t;
 
-// ptr
+/* ptr */
 typedef void* __ptr_t;
 
-// size
+/* size */
 typedef unsigned long size_t;
 typedef long ssize_t;
 
-// func exc
-typedef ssize_t (*funcn_t)(int, const void*, size_t);
-
-// linux write
+/* all linux write */
 ssize_t linux_x86_write(int fd, const void *buff, size_t count);
 ssize_t linux_x86_64_write(int fd, const void *buff, size_t count);
 ssize_t linux_arm_write(int fd, const void *buff, size_t count);
 ssize_t linux_aarch64_write(int fd, const void *buff, size_t count);
-// linux full write
-ssize_t linux_full_write(funcn_t writefn, int fd, const void *buff, size_t count);
 
-// linux write
+/* all linux read */
 ssize_t linux_x86_read(int fd, void *buff, size_t count);
 ssize_t linux_x86_64_read(int fd, void *buff, size_t count);
 ssize_t linux_arm_read(int fd, void *buff, size_t count);
 ssize_t linux_aarch64_read(int fd, void *buff, size_t count);
-// linux full write
-ssize_t linux_full_read(funcn_t readfn, int fd, void *buff, size_t count);
 
+/* full write function */
+ssize_t write(int fd, const void *buff, size_t count) {
+    const char *p = (const char*)buff;
+    size_t ttwrite = 0;
+    while (ttwrite < count) {
+        ssize_t w = __c_write(fd, p + ttwrite, count - ttwrite);
+        if (w <= 0) return (w < 0) ? -1 : ttwrite;
+        ttwrite += w;
+    }
+    return ttwrite;
+}
 
-// real func
-ssize_t write(int fd, const void *buff, size_t count) { return __c_write(fd, buff, count); }
-ssize_t read(int fd, void *buff, size_t count) { return __c_read(fd, buff, count); }
+/* full read function */
+ssize_t read(int fd, void *buff, size_t count) {
+    char *p = (char*)buff;
+    size_t ttread = 0;
+    while (ttread < count) {
+        ssize_t r = __c_read(fd, p + ttread, count - ttread);
+        if (r <= 0) return (r < 0) ? -1 : ttread;
+        ttread += r;
+    }
+    return ttread;
+}
 
 #endif
