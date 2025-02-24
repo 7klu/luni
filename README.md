@@ -16,7 +16,7 @@ Luni is an open-source library currently compatible with **C** and **C++**, with
 ![C++ Language](https://img.shields.io/badge/C++-00599c?style=for-the-badge&logo=c%2B%2B&logoColor=white)
 
 ## 🛠️ Installation
-A `Makefile` is included, but it is not fully developed yet. ⚙️
+A `Makefile` is included, but it is not developed yet. ⚙️
 
 ## 📚 Documentation
 - 📖 [Index](docs/index.md)
