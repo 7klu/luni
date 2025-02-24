@@ -37,15 +37,15 @@ This project is licensed under the [GNU General Public License (GPL)](LICENSE).
 ---
 
 ## 📅 Roadmap
-- **Q1 2025**: Expand functionality for Linux. 🐧
-- **Q2 2025**: Start developing support for Windows and macOS. 🪟 🍏
-- **Q3 2025**: Complete documentation and add more examples. 📜
+- **Q1 2025**: Expand functionality for **Linux**. 🐧
+- **Q2 2025**: Start developing support for **Windows** and **macOS**. 🪟 🍏
+- **Q3 2025**: Complete **documentation** and add more examples. 📜
 
 ---
 
 ## 🌟 Features to Come
-- 🚀 **Enhanced Performance Optimizations**: Improving efficiency and speed.
-- 🌍 **Community-Driven Features and Improvements**: Suggestions and contributions from users like you!
+- 🚀 **Enhanced Performance Optimizations**: Improving **efficiency** and **speed**.
+- 🌍 **Community-Driven Features and Improvements**: **Suggestions** and **contributions** from **users** like you!
 
 ---
 
@@ -62,5 +62,4 @@ This project is licensed under the [GNU General Public License (GPL)](LICENSE).
 
 ---
 
-> [!IMPORTANT]
-> Thank you for checking out Luni! We look forward to your feedback and contributions! 💡
+**Thank you for checking out Luni! We look forward to your feedback and contributions! 💡**
