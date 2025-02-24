@@ -89,6 +89,10 @@ typedef void* __ptr_t;
 typedef unsigned long size_t;
 typedef long ssize_t;
 
+/* linux part
+@
+*/
+
 /* all linux write */
 ssize_t linux_x86_write(int fd, const void *buff, size_t count);
 ssize_t linux_x86_64_write(int fd, const void *buff, size_t count);
@@ -100,6 +104,26 @@ ssize_t linux_x86_read(int fd, void *buff, size_t count);
 ssize_t linux_x86_64_read(int fd, void *buff, size_t count);
 ssize_t linux_arm_read(int fd, void *buff, size_t count);
 ssize_t linux_aarch64_read(int fd, void *buff, size_t count);
+
+/* all windows write */
+//ssize_t win_x86_write(int fd, const void *buff, size_t count);
+//ssize_t win_x86_64_write(int fd, const void *buff, size_t count);
+
+/* all windows read */
+//ssize_t win_x86_read(int fd, void *buff, size_t count);
+//ssize_t win_x86_64_read(int fd, void *buff, size_t count);
+
+/* all apple write */
+//ssize_t apple_x86_write(int fd, const void *buff, size_t count);
+//ssize_t apple_x86_64_write(int fd, const void *buff, size_t count);
+//ssize_t apple_arm_write(int fd, const void *buff, size_t count);
+//ssize_t apple_aarch64_write(int fd, const void *buff, size_t count);
+
+/* all apple read */
+//ssize_t apple_x86_read(int fd, void *buff, size_t count);
+//ssize_t apple_x86_64_read(int fd, void *buff, size_t count);
+//ssize_t apple_arm_read(int fd, void *buff, size_t count);
+//ssize_t apple_aarch64_read(int fd, void *buff, size_t count);
 
 /* full write function */
 ssize_t write(int fd, const void *buff, size_t count) {

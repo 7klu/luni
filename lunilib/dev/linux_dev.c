@@ -132,32 +132,3 @@ ssize_t linux_aarch64_read(int fd, void *buff, size_t count) {
     );
     return ret;
 }
-
-/*
- full function
- - linux
-*/
-
-/* write */
-ssize_t linux_full_write(ssize_t (*func_t)(int, const void*, size_t), int fd, const void *buff, size_t count) {
-    const char *p = (const char*)buff;
-    size_t ttwrite = 0;
-    while (ttwrite < count) {
-        ssize_t w = func_t(fd, p + ttwrite, count - ttwrite);
-        if (w <= 0) return (w < 0) ? -1 : ttwrite;
-        ttwrite += w;
-    }
-    return ttwrite;
-}
-
-/* read */
-ssize_t linux_full_read(ssize_t (*func_t)(int, void*, size_t), int fd, void *buff, size_t count) {
-    char *p = (char*)buff;
-    size_t ttread = 0;
-    while (ttread < count) {
-        ssize_t r = func_t(fd, p + ttread, count - ttread);
-        if (r <= 0) return (r < 0) ? -1 : ttread;
-        ttread += r;
-    }
-    return ttread;
-}
