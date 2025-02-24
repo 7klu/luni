@@ -16,13 +16,6 @@ To submit changes:
 5. **Commit and push** your changes.
 6. **Create a Pull Request**.
 
-### Checklist
-- [ ] Fork the repository
-- [ ] Clone your fork
-- [ ] Create a new branch
-- [ ] Make your changes
-- [ ] Submit a Pull Request
-
 ### Things to Add
 Here are some ideas for contributions:
 - Add more examples to the documentation.
