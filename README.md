@@ -13,7 +13,7 @@ Luni is an open-source library currently compatible with **![C](https://img.shie
 
 
 ## `🛠️` Installation
-A `Makefile` is included, but it is not fully developed yet. ⚙️
+A `Makefile` is included, but it is not fully developed yet. `⚙️`
 
 
 ## `📚` Documentation
