@@ -37,8 +37,6 @@ This project is licensed under the [GNU General Public License (GPL)](LICENSE).
 - 🚀 **Enhanced Performance Optimizations**: Improving efficiency and speed.
 - 🌍 **Community-Driven Features and Improvements**: Suggestions and contributions from users like you!
 
----
-
 ## 📊 Repository Information
 
 - **Stars**: ⭐ [Give us a star!](https://github.com/7klu/luni)
@@ -46,11 +44,6 @@ This project is licensed under the [GNU General Public License (GPL)](LICENSE).
 - **Issues**: 🐛 [Report an issue](https://github.com/7klu/luni/issues)
 - **Pull Requests**: 🔄 [Submit a pull request](https://github.com/7klu/luni/pulls)
 
----
-
 ⚠️ **Warning:** Luni is at its beginning stage, so it currently has limited compatibility. Only the Linux side has been started, and the documentation is sparse but will be completed over time. 🛠️
 
----
-
 Thank you for checking out Luni! We look forward to your feedback and contributions! 💡
-
