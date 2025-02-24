@@ -25,8 +25,8 @@ Here are some ideas for contributions:
     - `write`
     - `read`
   - Add support for:
-    - `close`: Close a file descriptor.
-    - `fork`: Create a new process.
+    - `close` Close a file descriptor.
+    - `fork` Create a new process.
 - Feel free to suggest additional features or improvements!
 
 Thank you for your contribution! 💡
