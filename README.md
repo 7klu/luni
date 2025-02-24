@@ -20,7 +20,6 @@ A `Makefile` is included, but it is not developed yet. ⚙️
 
 ## 📚 Documentation
 - 📖 [Index](docs/index.md)
-- 🥇 [Getting Started](docs/getting_started.md)
 - 📂 [Examples](examples/)
 
 ## 🤝 Contributing
