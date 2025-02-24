@@ -57,7 +57,8 @@ This project is licensed under the [GNU General Public License (GPL)](LICENSE).
 
 ---
 
-> ⚠️ **Warning:** Luni is at its beginning stage, so it currently has limited compatibility. Only the Linux side has been started, and the documentation is sparse but will be completed over time. 🛠️
+> [!Warning]
+> Luni is at its beginning stage, so it currently has limited compatibility. Only the Linux side has been started, and the documentation is sparse but will be completed over time. 🛠️
 
 ---
 
