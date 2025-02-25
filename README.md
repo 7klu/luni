@@ -14,7 +14,7 @@
 
 
 ## `🛠️` Installation
-A `Makefile` is included, but it is not fully developed yet. `⚙️`
+A `Makefile` is included, but it is not developed yet. `⚙️`
 
 
 ## `📚` Documentation
