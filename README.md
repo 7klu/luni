@@ -9,8 +9,7 @@
 [![Issues](https://img.shields.io/github/issues/7klu/luni.svg?style=flat-square)](https://github.com/7klu/luni/issues)
 [![Pull Requests](https://img.shields.io/github/issues-pr/7klu/luni.svg?style=flat-square)](https://github.com/7klu/luni/pulls)
 
-> [!IMPORTANT]
-> Luni is an open-source library currently compatible with **![C](https://img.shields.io/badge/C-0a84ff?style=for-the-badge&logo=c&logoColor=white)** and **![C++](https://img.shields.io/badge/C++-00599c?style=for-the-badge&logo=c%2B%2B&logoColor=white)**, with plans to expand support for more languages and features in the future. 
+Luni is an open-source library currently compatible with **![C](https://img.shields.io/badge/C-0a84ff?style=for-the-badge&logo=c&logoColor=white)** and **![C++](https://img.shields.io/badge/C++-00599c?style=for-the-badge&logo=c%2B%2B&logoColor=white)**, with plans to expand support for more languages and features in the future. 
 
 
 ## `🛠️` Installation
