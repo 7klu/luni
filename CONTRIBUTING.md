@@ -20,13 +20,10 @@ To submit changes:
 Here are some ideas for contributions:
 - Add more examples to the documentation.
 - Improve the existing documentation.
-- Implement new features:
-  - Optimize performance for functions:
-    - `write`
-    - `read`
-  - Add support for:
-    - `close` Close a file descriptor.
-    - `fork` Create a new process.
+- Optimize function performance
+- Add support for all syscalls
+- Add support for new architectures
+- Fix bugs
 - Feel free to suggest additional features or improvements!
 
 Thank you for your contribution! 💡
